@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.btn-primary {
+    background-color: $color-primary-blue;
+    padding-inline: $layout-padding-content;
+    padding-block: 0.6rem;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-light-blue;
+        transition: all 0.2s ease-in-out;
+    }
+}

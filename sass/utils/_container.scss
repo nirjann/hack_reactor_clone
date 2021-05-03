@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+.container {
+    //max-width: $layout-max-width-container;
+    padding-inline: $layout-padding-container;
+    padding-block: $layout-padding-content;
+    width: 100%;
+}

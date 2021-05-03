@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sa {
+  justify-content: space-around;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+.container {
+  padding-inline: 20rem;
+  padding-block: 0.9375rem;
+  width: 100%;
+}
+
+.header-container {
+  height: 6.25rem;
+  width: 100%;
+  position: sticky;
+}
+.header-container .fa-user-caret {
+  display: inline-block;
+  color: #4aaded;
+  margin-left: 0.5rem;
+}
+
+.nav-item {
+  margin-inline: 0.935rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+.nav-item a:hover {
+  color: #4aaded;
+}
+
+.dropdown {
+  position: relative;
+  top: 20rem;
+  display: none;
+}
+
+.btn-primary {
+  background-color: #0090d9;
+  padding-inline: 0.9375rem;
+  padding-block: 0.6rem;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #4aaded;
+  transition: all 0.2s ease-in-out;
+}
+
+/*# sourceMappingURL=main.css.map */

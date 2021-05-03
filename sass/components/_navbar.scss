@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.nav-item {
+  
+  margin-inline: 0.935rem;
+  cursor: pointer;
+  font-size: 14px;
+  a {
+    &:hover {
+      color: $color-light-blue;
+    }
+  }
+
+  
+}

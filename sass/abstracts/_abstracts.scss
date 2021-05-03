@@ -1,0 +1,38 @@
+
+// Colors
+$color-primary-blue: #0090d9;
+$color-light-blue: #4aaded;
+$color-dark-blue: #0078b5;
+$color-almost-black: #08080d;
+$color-white: #fff;
+$color-grey-light: #d8d8d8;
+
+// box shadow
+$box-shadow: 0.0625rem 0.0625rem 0.1875rem 0 rgba(0,0,0,0.35);
+
+// media queries
+$media-querie-desktop: 64rem;
+$media-querie-tablet: 48rem;
+$media-querie-mobile: 22.5rem;
+
+// layouts
+$layout-max-width-container: 100rem;
+$layout-padding-container: 20rem;
+$layout-padding-content: 0.9375rem;
+$layout-margin-mobile: 0.9375rem;
+$layout-margin-top-big: 4rem;
+$layout-margin-top-small: 3rem;
+
+// font
+$fonts: (
+    segoue: 'Segoe UI',
+    charter: 'Charter',
+    small: 300,
+    regular: 400,
+    large: 500,
+);
+
+@mixin font($family, $weight) {
+    font-family: map-get($map: $fonts, $key: $family), sans-serif;
+    font-weight: map-get($map: $fonts, $key: $weight );
+}
