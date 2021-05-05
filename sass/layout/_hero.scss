@@ -1,0 +1,55 @@
+@use '../abstracts' as *;
+
+.hero {
+    background: url('../../images/heroimageHackReactor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $color-black-5;
+    color: $color-white;
+    height: 576px;
+    text-align: center;
+    
+}
+
+.hero-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    h4 {
+        font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+        font-weight: 400;
+        font-size: 2.875rem;
+        line-height: 3.75rem;
+        margin-bottom: 1.5rem;
+
+        @media screen and (max-width: map-get($map: $breakpoint-down, $key: mobile)) {
+            font-size: 1.75rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    p {
+        font-family: Segoe UI, Candara, PT Sans, Bitstream Vera Sans, DejaVu Sans, Trebuchet MS, Verdana, Verdana Ref, sans-serif;
+        font-size: 1.375rem;
+        line-height:2.25rem;
+        font-weight: 300;
+
+
+        @media screen and (max-width: map-get($map: $breakpoint-down, $key: tablet)) {
+            display: none;
+        }
+    }
+}
+
+.hero-btn {
+    margin-top: 2.25rem;
+    
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: tablet)) {
+        margin-top: 4.5rem;
+    }
+}

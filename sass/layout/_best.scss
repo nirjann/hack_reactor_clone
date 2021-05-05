@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.best {
+    width: 100%;
+    background: linear-gradient(10deg,$color-black-5 45%,transparent 0);
+    background-color: $color-grey;
+    border-top: 9px solid $color-primary-blue;
+
+}
+
+.best-container {
+    padding-top: 1rem;
+    height: 10.75rem;
+    color: $color-white;
+    h2 {
+        font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+}

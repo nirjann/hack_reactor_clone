@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.reviews {
+    width: 100%;
+    background-color: $color-grey-light;
+}
+
+.reviews-container {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-block: $layout-padding-content;
+}
+
+.review-item {
+    p {
+        color: $color-greyish-brown;
+        font-size: 0.9735;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}

@@ -1,7 +1,74 @@
 @use '../abstracts' as *;
 
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 6.25rem;
+  left: 0rem;
+  width: 20rem;
+  padding: $layout-padding-content;
+  background-color: $color-white;
+  border-radius: 5px;
+  border-top: 2px solid $color-light-blue;
+  box-shadow: $box-shadow;
+}
+
+.sub-menu__mobile {
+  display: block;
+  margin-top: 20px;
+  padding-inline: 5px;
+  display: none;
+}
+
+.nav-item:hover {
+  .sub-menu {
+    display: inline-block;
+  }
+}
+
 .dropdown {
-    position: relative;
-    top: 20rem;
-    display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dropdown li {
+  width: 100%;
+  padding: $layout-padding-content;
+
+  a {
+    display: inline-block;
+    color: $color-almost-black;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $color-grey-lighter;
+    transform: translateX(9px);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.dropdown li:not(:last-child)::after{
+  content: "";
+  display: block;
+  position: relative;
+  border-bottom: 1px solid $color-grey-light;
+  top: 15px;
+}
+
+.dropdown__mobile {
+  background-color: $color-grey-lighter;
+  transform: translate(9px);
+
+  a:hover {
+    color: $color-light-blue;
+  }
+
+  h4 {
+    text-transform: capitalize;
+    margin: 10px;
+  }
 }

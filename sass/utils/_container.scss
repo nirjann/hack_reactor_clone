@@ -1,8 +1,14 @@
 @use '../abstracts' as *;
 
 .container {
-    //max-width: $layout-max-width-container;
+    position: relative;
     padding-inline: $layout-padding-container;
     padding-block: $layout-padding-content;
-    width: 100%;
+    max-width: $layout-max-width-container;
+    margin: 0 auto;
+    padding: 0 $layout-padding-content;
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: desktop))  {
+        
+        margin:auto;
+    }
 }

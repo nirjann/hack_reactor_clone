@@ -19,62 +19,195 @@
   <body>
     <!-- Header Section -->
     <header>
-      <div class="container header-container flex flex-jc-sa flex-ai-c">
+      <div class="container header-container flex flex-jc-sb flex-ai-c">
         <div class="logo">
           <img src="./images/logo.svg" alt="" />
         </div>
 
         <nav>
           <div class="navbar">
-            <ul class="nav-menu flex flex-jc-sa">
+            <ul class="nav-menu flex flex-jc-sb flex-ai-c ">
               <li class="nav-item">
                 <a href="">Bootcamps</a><i class="fas fa-caret-down fa-user-caret"></i>
-                <ul class="dropdown">
-                  <h4>Software Engineering Immersive</h4>
-                  <li><a href="#">Software Engineering Immersive</a></li>
-                  <li><a href="#">Software Engineering Online Immersive</a></li>
-                  <li>
-                    <a href="#">Software Engineering Online Immersive Part Time</a>
-                  </li>
-                  <li><a href="#">Campus Locations</a></li>
-                </ul>
+                <div class="sub-menu">
+                  <ul class="dropdown">
+                    <h4>Software Engineering Immersive</h4>
+                    <li><a href="#">Software Engineering Immersive</a></li>
+                    <li><a href="#">Software Engineering Online Immersive</a></li>
+                    <li>
+                      <a href="#">Software Engineering Online Immersive Part Time</a>
+                    </li>
+                    <li><a href="#">Campus Locations</a></li>
+                    </ul>
+                </div>
+                
               </li>
+
               <li class="nav-item">
                 <a href="">Professional Development</a><i class="fas fa-caret-down fa-user-caret"></i>
-                <ul class="dropdown">
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="">Methodologies + Requirements Gathering</a></li>
-                  <li><a href="">Networking + Reactive Programming</a></li>
-                  <li><a href="">Computer Architecture + IoT</a></li>
-                  <li><a href="">Microservices + Orchestration</a></li>
-                  <li><a href="#">Algorithm + Data Structures</a></li>
-                  <li><a href="">Employer Tution Reimbursement</a></li>
-                </ul>
+
+                <div class="sub-menu">
+                  <ul class="dropdown">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="">Methodologies + Requirements Gathering</a></li>
+                    <li><a href="">Networking + Reactive Programming</a></li>
+                    <li><a href="">Computer Architecture + IoT</a></li>
+                    <li><a href="">Microservices + Orchestration</a></li>
+                    <li><a href="#">Algorithm + Data Structures</a></li>
+                    <li><a href="">Employer Tution Reimbursement</a></li>
+                  </ul>
+                </div>
               </li>
+
               <li class="nav-item"><a href="">Prepare</a></li>
+
               <li class="nav-item">
                 <a href="">Outcomes</a><i class="fas fa-caret-down fa-user-caret"></i>
-                <ul class="dropdown">
-                  <li><a href="">Student Outcome</a></li>
-                  <li><a href="">Student Project</a></li>
-                </ul>
+                <div class="sub-menu">
+                  <ul class="dropdown">
+                    <li><a href="">Student Outcome</a></li>
+                    <li><a href="">Student Project</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a href="">Events</a><i class="fas fa-caret-down fa-user-caret"></i>
-                <ul class="dropdown">
-                  <li><a href="">Workshops & Events</a></li>
-                  <li><a href="">Webinars</a></li>
-                </ul>
+                <div class="sub-menu">
+                  <ul class="dropdown">
+                    <li><a href="">Workshops & Events</a></li>
+                    <li><a href="">Webinars</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a href="" class="btn-primary">Apply Now</a>
               </li>
             </ul>
+            
           </div>
         </nav>
+        <div class="navbar__mobile flex flex-jc-sb flex-ai-c">
+          <a href="" class="btn-primary">Apply Now</a>
+          <div class="burger" id = "burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+       
       </div>
+      <!--Mobile Navbar -->
+      <div class="navbar__mobile">
+        <ul class="nav-menu__mobile" id = "nav-menu-mobile">
+          <li class="nav-item__mobile">
+            <a href="">Bootcamps</a><i class="fas fa-caret-down fa-user-caret-mobile"></i>
+            <div class="sub-menu__mobile">
+              <ul class="dropdown dropdown__mobile">
+                <h4>Software Engineering Immersive</h4>
+                <li><a href="#">Software Engineering Immersive</a></li>
+                <li><a href="#">Software Engineering Online Immersive</a></li>
+                <li>
+                  <a href="#">Software Engineering Online Immersive Part Time</a>
+                </li>
+                <li><a href="#">Campus Locations</a></li>
+                </ul>
+            </div>
+            
+          </li>
+
+          <li class="nav-item__mobile">
+            <a href="">Professional Development</a><i class="fas fa-caret-down fa-user-caret-mobile"></i>
+
+            <div class="sub-menu__mobile">
+              <ul class="dropdown dropdown__mobile">
+                <li><a href="#">Overview</a></li>
+                <li><a href="">Methodologies + Requirements Gathering</a></li>
+                <li><a href="">Networking + Reactive Programming</a></li>
+                <li><a href="">Computer Architecture + IoT</a></li>
+                <li><a href="">Microservices + Orchestration</a></li>
+                <li><a href="#">Algorithm + Data Structures</a></li>
+                <li><a href="">Employer Tution Reimbursement</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item__mobile"><a href="">Prepare</a></li>
+
+          <li class="nav-item__mobile">
+            <a href="">Outcomes</a><i class="fas fa-caret-down fa-user-caret-mobile"></i>
+            <div class="sub-menu__mobile">
+              <ul class="dropdown dropdown__mobile">
+                <li><a href="">Student Outcome</a></li>
+                <li><a href="">Student Project</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item__mobile">
+            <a href="">Events</a><i class="fas fa-caret-down fa-user-caret-mobile"></i>
+            <div class="sub-menu__mobile">
+              <ul class="dropdown dropdown__mobile">
+                <li><a href="">Workshops & Events</a></li>
+                <li><a href="">Webinars</a></li>
+              </ul>
+            </div>
+          </li>
+          
+        </ul>
+        
+      </div>
+
     </header>
 
     <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h4>The Most Advanced Coding Bootcamp: Think Like a Software Engineer</h4>
+          <p>Don't just learn to code. Reinvent your career full-time, part-time, in-person or online.</p>
+        </div>
+
+        <div class="hero-btn">
+          <a href="#" class="btn-primary">Start Learning for Free</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <div class="container reviews-container">
+        <div class="review-item">
+          <p>Rated “Best Coding Bootcamp”</p>
+          <img src="./images/coures_report_and_switchup.webp" alt="">
+        </div>
+        <div class="review-item">
+          <p>Quora Reviews</p>
+          <img src="./images/reviews.webp" alt="">
+        </div>
+        <div class="review-item">
+          <p>Rated “Best ISA Bootcamp”</p>
+          <img src="./images/best_isa.webp" alt="">
+        </div>
+        <div class="review-item">
+          <p>Over 8,000 Alumni Including 65 at</p>
+          <img src="./images/google.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Section -->
+    <section class="best">
+      <div class="container best-container">
+        <h2>We now have the best ISA in the industry</h2>
+        <p>In response to financial uncertainty, we’ve updated our income share agreement terms to be even more accommodating for our students.</p>
+        <a href="" class="btn-primary">Learn More</a>
+      </div>
+    </section>
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

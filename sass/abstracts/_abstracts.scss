@@ -1,38 +1,51 @@
-
 // Colors
 $color-primary-blue: #0090d9;
 $color-light-blue: #4aaded;
 $color-dark-blue: #0078b5;
 $color-almost-black: #08080d;
+$color-black-5: rgba(0,0,0,0.05);
 $color-white: #fff;
 $color-grey-light: #d8d8d8;
+$color-grey-lighter: #f8f8f8;
+$color-greyish-brown: #4c4c4c;
+$color-grey: #6d7278;
 
 // box shadow
-$box-shadow: 0.0625rem 0.0625rem 0.1875rem 0 rgba(0,0,0,0.35);
+$box-shadow: 0.0625rem 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.35);
 
 // media queries
-$media-querie-desktop: 64rem;
-$media-querie-tablet: 48rem;
-$media-querie-mobile: 22.5rem;
+
+$breakpoint-down: (
+  desktop: 64rem,
+  tablet: 48rem,
+  mobile: 22.5rem,
+);
+
+$breakpoint-up: (
+    desktop: 63.94rem,
+    tablet: 47.94rem,
+    mobile: 22.44rem,
+);
 
 // layouts
-$layout-max-width-container: 100rem;
+$layout-max-width-container: 62.5rem;
 $layout-padding-container: 20rem;
 $layout-padding-content: 0.9375rem;
 $layout-margin-mobile: 0.9375rem;
 $layout-margin-top-big: 4rem;
 $layout-margin-top-small: 3rem;
+$layout-header-height: 6.25rem;
 
 // font
 $fonts: (
-    segoue: 'Segoe UI',
-    charter: 'Charter',
-    small: 300,
-    regular: 400,
-    large: 500,
+  segoue: "Segoe UI",
+  charter: "Charter",
+  small: 300,
+  regular: 400,
+  large: 500,
 );
 
 @mixin font($family, $weight) {
-    font-family: map-get($map: $fonts, $key: $family), sans-serif;
-    font-weight: map-get($map: $fonts, $key: $weight );
+  font-family: map-get($map: $fonts, $key: $family);
+  font-weight: map-get($map: $fonts, $key: $weight);
 }

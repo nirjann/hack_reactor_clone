@@ -1,12 +1,16 @@
 @use '../abstracts' as *;
 
 .header-container {
-    height: 6.25rem;
+    background-color: $color-white;
+    height: $layout-header-height;
     width: 100%;
+    margin: auto;
     position: sticky;
     .fa-user-caret {
         display: inline-block;
         color: $color-light-blue;
         margin-left: 0.5rem;
     }
+
+    
 }

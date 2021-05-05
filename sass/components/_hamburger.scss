@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+.burger {
+    height: 100%;
+    width: 3rem;
+    // background-color: pink;
+    margin-left: 0.7rem;
+    margin-block: auto;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 0.35rem;
+    margin: 0.45rem 0;
+    background-color: $color-primary-blue;
+    border: solid 1px $color-primary-blue;
+    border-radius: 5px;
+}

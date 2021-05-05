@@ -1,15 +1,86 @@
 @use '../abstracts' as *;
 
+.navbar {
+  height: 6.25rem;
+
+}
+
+.nav-menu {
+  position: relative;
+  top: 35%;
+  height: 100%;
+
+  @media screen and (max-width: map-get($map: $breakpoint-down, $key: desktop)) {
+    display: none;
+  }
+}
 .nav-item {
-  
+  position: relative;
   margin-inline: 0.935rem;
   cursor: pointer;
   font-size: 14px;
+  height: 100%;
   a {
     &:hover {
       color: $color-light-blue;
     }
   }
+}
+
+// Mobile Version
+.navbar__mobile {
+  @media screen and (min-width: map-get($map: $breakpoint-up, $key: desktop)) {
+    display: none;
+  }
+}
+
+.nav-menu__mobile {
+  width: 100%;
+
+  //max-width: map-get($map: $breakpoint-down, $key: desktop);
+  display: none;
+  position: absolute;
+  left: 0;
+  top: $layout-header-height;
+  padding-right: 0.5rem;
+}
+
+.nav-menu__mobile  li:not(:last-child)::after{
+ 
+  content: "";
+  display: block;
+  position: relative;
+  border-bottom: 1px solid $color-grey-light;
+  top: 20px;
+
+}
+
+.nav-item__mobile {
+  position: relative;
+  margin-inline: 0.935rem;
+  cursor: pointer;
+  font-size: 14px;
+  padding: $layout-padding-content;
+  width: 100%;
 
   
+
+  a {
+    position:relative;
+    left: 5px;
+    font-weight: 600;
+  }
+
+  &:hover a {
+    color: $color-light-blue;
+  }
 }
+
+
+.nav-item__mobile .fa-user-caret-mobile {
+  color: $color-light-blue;
+  position: absolute;
+  right: 30px;
+  transform: rotate(-90deg);
+}
+
