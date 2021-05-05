@@ -6,12 +6,20 @@
 }
 
 .reviews-container {
-    display: flex;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    
+    
+    
     padding-block: $layout-padding-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: tablet )) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    @media screen and (max-width: map-get($map: $breakpoint-up, $key: mobile )){
+        grid-template-columns: 1fr;
+    }
 }
 
 .review-item {

@@ -21,8 +21,18 @@ body {
 }
 
 img {
+  display: block;
+  width: 100%;
+}
+
+iframe {
   width: 100%;
   height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+  font-weight: 300;
 }
 
 .active {
@@ -130,12 +140,20 @@ img {
 }
 
 .reviews-container {
-  display: flex;
-  height: auto;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   padding-block: 0.9375rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 48rem) {
+  .reviews-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 22.44rem) {
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .review-item p {
@@ -151,11 +169,21 @@ img {
   background-color: #6d7278;
   border-top: 9px solid #0090d9;
 }
+@media screen and (max-width: 22.5rem) {
+  .best {
+    background: transparent;
+    background-color: #fff;
+    padding: 0.9375rem;
+    border: none;
+  }
+}
 
 .best-container {
   padding-top: 1rem;
-  height: 10.75rem;
+  height: 14.75rem;
   color: #fff;
+  background: linear-gradient(10deg, rgba(0, 0, 0, 0.05) 45%, transparent 0);
+  background-color: #6d7278;
 }
 .best-container h2 {
   font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
@@ -167,6 +195,364 @@ img {
   font-weight: 300;
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 22.5rem) {
+  .best-container {
+    height: 20rem;
+    border-top: 9px solid #0090d9;
+    border-radius: 5px;
+  }
+  .best-container p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.placement-text {
+  text-align: center;
+  margin-top: 3.5rem;
+}
+.placement-text h2 {
+  font-size: 1.875rem;
+  font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+  font-weight: 400;
+}
+.placement-text p {
+  margin-top: 1.5rem;
+  font-size: 1.0625rem;
+}
+.placement-text p span {
+  margin-top: 1rem;
+}
+
+.placement-showcase {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media screen and (max-width: 48rem) {
+  .placement-showcase {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 22.5rem) {
+  .placement-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.desc {
+  margin-top: 4rem;
+}
+
+.desc-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 48rem) {
+  .desc-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.desc-text {
+  padding-right: 2.2rem;
+}
+.desc-text h2 {
+  font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 22.5rem) {
+  .desc-text {
+    margin-bottom: 2.2rem;
+  }
+}
+
+.bootcamps {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.bootcamps-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 64rem) {
+  .bootcamps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 48rem) {
+  .bootcamps-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bootcamp-article {
+  margin-inline: 0.9735rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 48rem) {
+  .bootcamp-article {
+    margin-bottom: 2rem;
+  }
+}
+
+.bootcamps-img {
+  margin-bottom: 2.5rem;
+  height: 14.5rem;
+  width: 100%;
+}
+.bootcamps-img img {
+  height: 100%;
+}
+.bootcamps-img__1 {
+  background: url("../../images/hero-bg--career-services-remote.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bootcamps-img__2 {
+  background: url("../../images/prep-overview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bootcamps-img__3 {
+  background: url("../../images/scholarships.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bootcamps-text h1 {
+  font-size: 1.875rem;
+  font-weight: 300;
+  font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+  margin-bottom: 1.2rem;
+}
+.bootcamps-text h2 {
+  font-size: 1.375rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+}
+
+.bootcamps-btn {
+  margin-block: 2rem;
+  width: 100%;
+}
+.bootcamps-btn a {
+  padding-inline: 3rem;
+}
+
+.syllabus-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding: 0.9375rem;
+  text-align: left;
+}
+
+.syllabus-text {
+  padding-left: 1.5rem;
+}
+
+.syllabus-btn a {
+  padding-block: 1.2rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .syllabus-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr 0.5fr;
+  }
+
+  .syllabus-img {
+    grid-row: 1;
+  }
+
+  .syllabus-text {
+    grid-row: 2/3;
+  }
+
+  .syllabus-btn {
+    grid-row: 3/4;
+  }
+}
+.testimonial {
+  margin-top: 4rem;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr;
+}
+
+.testimonial-article {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.testimonial-article__1 {
+  grid-row: 1/2;
+}
+.testimonial-article__2 {
+  grid-row: 2/3;
+}
+.testimonial-article__3 {
+  grid-row: 3/4;
+}
+
+.testimonial-article-img {
+  width: 10.125rem;
+  margin-right: 1.2rem;
+}
+
+.testimonial-article-text p {
+  font-size: 1rem;
+  line-height: 1.4357rem;
+  margin-bottom: 0.5rem;
+}
+.testimonial-article-text p:last-child {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.testimonial-awards {
+  grid-row: 1/4;
+  margin-left: 1.5rem;
+}
+
+.awards-container {
+  text-align: center;
+  padding: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.awards-container img {
+  margin-bottom: 1.5rem;
+  height: 6.625rem;
+  width: 9.625rem;
+}
+.awards-container p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 64rem) {
+  .testimonial-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 0.2fr) 1fr;
+  }
+
+  .testimonial-awards {
+    grid-row: 4/5;
+  }
+}
+.blog {
+  margin-top: 4rem;
+}
+
+.blog-container > h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-article {
+  display: grid;
+  grid-template-columns: 0.2fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 48rem) {
+  .blog-article {
+    grid-template-rows: 1fr 0.3fr 0.2fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-img {
+  width: 10.9rem;
+  margin-right: 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  overflow: hidden;
+}
+@media screen and (max-width: 48rem) {
+  .blog-img {
+    width: 80%;
+    height: 100%;
+  }
+}
+
+.news > h1 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 48rem) {
+  .news-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  }
+}
+
+.news-article {
+  margin-inline: 0.6rem;
+  display: grid;
+  grid-template-rows: 0.1fr 0.3fr 0.3fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.news-img {
+  margin-bottom: 1.2rem;
+}
+
+.news-text {
+  font-size: 14px;
+}
+
+.news-btn {
+  margin-top: 3rem;
+}
+
+.admission-container {
+  text-align: center;
+}
+.admission-container h1 {
+  margin-top: 4rem;
+}
+
+.admission-btn {
+  margin-top: 3rem;
+}
+
+footer {
+  background-color: #0090d9;
+  margin-top: 4rem;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar {
@@ -203,6 +589,7 @@ img {
 
 .nav-menu__mobile {
   width: 100%;
+  background-color: #fff;
   display: none;
   position: absolute;
   left: 0;
@@ -216,6 +603,8 @@ img {
   position: relative;
   border-bottom: 1px solid #d8d8d8;
   top: 20px;
+  z-index: 10;
+  overflow: hidden;
 }
 
 .nav-item__mobile {
@@ -335,6 +724,37 @@ img {
 .btn-primary:hover {
   background-color: #4aaded;
   transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  padding-inline: 0.9375rem;
+  padding-block: 0.3rem;
+  color: #4aaded;
+  border: 1px solid #4aaded;
+}
+.btn-secondary:hover {
+  background-color: #4aaded;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  padding-inline: 0.9375rem;
+  padding-block: 0.3rem;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-tertiary:hover {
+  background-color: #fff;
+  color: #4c4c4c;
+  transition: all 0.25s ease-in-out;
+}
+
+.card {
+  padding: 0.9375rem;
+  box-shadow: 0.0625rem 0.0625rem 0.1875rem 0 rgba(0, 0, 0, 0.35);
 }
 
 /*# sourceMappingURL=main.css.map */

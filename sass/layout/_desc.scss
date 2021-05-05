@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.desc {
+    margin-top: 4rem;
+}
+
+.desc-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: tablet )) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}
+
+.desc-text {
+    padding-right: 2.2rem;
+
+    h2 {
+        font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: mobile)) {
+        margin-bottom: 2.2rem;
+    }
+}

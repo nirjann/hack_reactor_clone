@@ -1,0 +1,12 @@
+@use '../abstracts' as * ;
+
+footer {
+    background-color: $color-primary-blue;
+    margin-top: 4rem;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

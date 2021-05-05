@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.news {
+    > h1 {
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width:map-get($map: $breakpoint-down, $key:tablet) ){
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    }
+}
+.news-article {
+    margin-inline: 0.6rem;
+    display: grid;
+    grid-template-rows: 0.1fr 0.3fr 0.3fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.news-img {
+    margin-bottom: 1.2rem;
+}
+
+.news-text {
+    font-size: 14px;
+}
+
+.news-btn {
+    margin-top: 3rem;
+}

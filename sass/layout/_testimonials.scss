@@ -1,0 +1,84 @@
+@use '../abstracts' as *;
+
+.testimonial {
+  margin-top: 4rem;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr;
+}
+
+.testimonial-article {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  &__1 {
+    grid-row: 1/2;
+  }
+
+  &__2 {
+    grid-row: 2/3;
+  }
+
+  &__3 {
+    grid-row: 3/4;
+  }
+}
+
+.testimonial-article-img {
+  width: 10.125rem;
+  margin-right: 1.2rem;
+
+  
+}
+
+.testimonial-article-text {
+  p {
+    font-size: 1rem;
+    line-height: 1.4357rem;
+    margin-bottom: 0.5rem;
+  }
+  p:last-child {
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+.testimonial-awards {
+  grid-row: 1/4;
+  margin-left: 1.5rem;
+}
+
+.awards-container {
+  text-align: center;
+  padding: $layout-padding-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-bottom: 1.5rem;
+    height: 6.625rem;
+    width: 9.625rem;
+  }
+  p {
+    font-size: 14px;
+
+  }
+  
+}
+
+@media screen and (max-width: map-get($map: $breakpoint-down, $key:desktop)) {
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 0.2fr) 1fr;
+  }
+
+  .testimonial-awards {
+    grid-row: 4/5;
+  }
+}

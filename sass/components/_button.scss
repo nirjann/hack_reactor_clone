@@ -11,3 +11,31 @@
         transition: all 0.2s ease-in-out;
     }
 }
+
+.btn-secondary {
+    background-color: transparent;
+    padding-inline: $layout-padding-content;
+    padding-block: 0.3rem;
+    color: $color-light-blue;
+    border: 1px solid $color-light-blue;
+
+    &:hover {
+        background-color: $color-light-blue;
+        color: $color-white;
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+.btn-tertiary {
+    background-color: transparent;
+    padding-inline: $layout-padding-content;
+    padding-block: 0.3rem;
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-greyish-brown;
+        transition: all 0.25s ease-in-out;
+    }
+}

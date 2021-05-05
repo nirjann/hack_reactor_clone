@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+
+.placement-text {
+    text-align: center;
+    margin-top: 3.5rem;
+
+    h2 {
+        font-size: 1.875rem;
+        font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+        font-weight: 400;
+    }
+
+    p {
+        margin-top: 1.5rem;
+        font-size: 1.0625rem;
+        span {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.placement-showcase {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: tablet )){
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: mobile )){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

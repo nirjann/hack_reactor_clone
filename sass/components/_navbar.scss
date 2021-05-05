@@ -36,7 +36,7 @@
 
 .nav-menu__mobile {
   width: 100%;
-
+  background-color: $color-white;
   //max-width: map-get($map: $breakpoint-down, $key: desktop);
   display: none;
   position: absolute;
@@ -52,6 +52,8 @@
   position: relative;
   border-bottom: 1px solid $color-grey-light;
   top: 20px;
+  z-index: 10;
+  overflow: hidden;
 
 }
 

@@ -1,0 +1,84 @@
+@use '../abstracts' as *;
+
+.bootcamps {
+    text-align: center;
+    margin-top: 4rem;
+}
+.bootcamps-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: desktop)) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: tablet )) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bootcamp-article {
+    margin-inline: 0.9735rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: map-get($map: $breakpoint-down, $key: tablet)) {
+        margin-bottom: 2rem;
+    }
+}
+
+.bootcamps-img {
+    margin-bottom: 2.5rem;
+    height: 14.5rem;
+    width: 100%;
+    
+    img {
+        height: 100%;
+    }
+    &__1 {
+        
+        background: url('../../images/hero-bg--career-services-remote.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__2 {
+        background: url('../../images/prep-overview.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__3 {
+        background: url('../../images/scholarships.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.bootcamps-text {
+    h1 {
+        font-size: 1.875rem;
+        font-weight: 300;
+        font-family: Charter, Sylfaen, Cambria, Georgia, Times, serif;
+        margin-bottom: 1.2rem;
+    }
+   
+    h2 {
+        font-size: 1.375rem;
+        font-weight: 300;
+        margin-bottom: 1.2rem;
+    }
+
+}
+
+.bootcamps-btn {
+    
+    margin-block: 2rem;
+    width: 100%;
+    a {
+        padding-inline: 3rem;
+    }
+}

@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+.card {
+    padding: $layout-padding-content;
+    box-shadow: $box-shadow;
+}

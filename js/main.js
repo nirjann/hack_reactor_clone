@@ -21,6 +21,7 @@ function expandNavItems(target) {
       let styleDisplay = getComputedStyle(childNodes[i]).display;
 
       if (styleDisplay == "none") {
+        console.log('clicked');
         childNodes[i].style.display = "block";
       } else {
         childNodes[i].style.display = "none";
